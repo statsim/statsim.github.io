@@ -3,10 +3,12 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #000a2a;
-  background: -moz-linear-gradient(-45deg, #64002c 0%, #480949 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #64002c 0%,#480949 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #64002c 0%,#480949 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #00020a;
+  /*
+  background: -moz-linear-gradient(-45deg, #64002c 0%, #230949 100%);
+  background: -webkit-linear-gradient(-45deg, #64002c 0%,#230949 100%);
+  background: linear-gradient(135deg, #64002c 0%,#230949 100%);
+  */
 }
 
 .wrapper {
@@ -19,6 +21,8 @@ header  {
   /*background: #000a2a;*/
   color: white;
   padding: 40px 20px 60px;
+  position: relative;
+  z-index: 2;
 }
 
 header h1 {
@@ -34,14 +38,14 @@ header p {
 
 header a.cta {
   color: white;
-  background-color: #ff9d00;
+  background-color: #1b31ab;
   text-decoration: none;
   font-size: 0.9em;
   padding: 12px 20px;
 }
 
 header a.cta:hover {
-  background-color: #e88109;
+  background-color: #2a44d3;
 }
 
 header img.logo {
@@ -68,4 +72,12 @@ header .social .icon img {
   width: 22px;
   filter: invert(100%);
     -webkit-filter: invert(100%);
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

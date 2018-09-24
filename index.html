@@ -15,7 +15,7 @@
         <img class="logo" alt="StatSim" src="images/logo.png"/>
         <h1>Statistical Simulation and Bayesian Inference in the Browser</h1>
         <p><strong>StatSim</strong> is an open-source probabilistic simulation web app. It's based on WebPPL and Vue.js. Currently everything is processed in the browser. Server-side simulations coming soon...</p>
-        <a href="/app" class="cta">Open app</a>
+        <a href="/app" class="cta">Open StatSim App</a>
 
         <div class="social">
           <a href="https://twitter.com/statsimcom" class="icon"><img src="images/twitter.svg"/></a>
@@ -23,5 +23,12 @@
         </div>
       </div>
     </header>
+    <div id="particles-js"></div>
+    <script src="particles.min.js"></script>
+    <script charset="utf-8">
+      particlesJS.load('particles-js', 'particles-config.json', function() {
+          console.log('callback - particles.js config loaded');
+      })
+    </script>
   </body>
 </html>
