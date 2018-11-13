@@ -78,7 +78,7 @@ header a.cta-download:hover {
 }
 
 header img.logo {
-  width: 125px;
+  width: 115px;
 }
 
 header img.phone {
@@ -140,6 +140,10 @@ section {
   border-radius: 5px;
 }
 
+.feature:hover {
+  box-shadow: 0 10px 45px rgba(0,0,0,.15);
+}
+
 .feature h3 {
   margin: 10px 0;
 }
@@ -156,7 +160,6 @@ section {
 }
 
 .examples {
-  margin-top: 80px;
 }
 
 .examples li {
@@ -186,6 +189,42 @@ section {
   color: #888;
 }
 
+.screenshot {
+  display: flex;
+  margin: 50px 0;
+}
+
+.screenshot .description {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.screenshot h1, .server h1 {
+  font-weight: 300;
+}
+
+.screenshot img {
+  width: 65%;
+  box-shadow: 0 0 40px rgba(0,0,0,.15);
+  border-radius: 5px; 
+}
+
+.server {
+  width: 430px;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px 35px;
+  border: 1px solid #e4e4e4;
+  background: #eaeaea;
+}
+
 @media only screen and (max-width: 860px) {
 	header .header-content {
     width: 100%;
@@ -197,5 +236,23 @@ section {
     width: 90%;
     padding: 5%;
     margin-bottom: 20px; 
+  }
+  .screenshot {
+    display: block;
+    border-top: 1px solid #ddd;
+    padding-top: 50px;
+  }
+  .screenshot img {
+    width: 100%;
+  }
+  .screenshot .description {
+    width: 100%;
+    display: block;
+    padding: 0;
+    text-align: left;
+  }
+  .server {
+    width: 90%;
+    padding: 5%;
   }
 }
