@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <title>StatSim - Statistical Simulations & Bayesian Inference</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7770107-2"></script>
@@ -18,22 +19,69 @@
    </script>
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <div class="wrapper">
+        <div style="width: calc(100% - 480px)">
         <img class="logo" alt="StatSim" src="images/logo.png"/>
-        <h1>Statistical Simulation and Bayesian Inference in the Browser</h1>
+        <h1>Statistical Simulation and Inference in the Browser</h1>
         <p><strong>StatSim</strong> is a free probabilistic simulation web app. Multiple simulation methods and over 20 built-in distributions make it possible to create complex models and implement Bayesian inference in the browser. Server-side processing coming soon... </p>
-        <a href="/app" class="cta cta-web">⤷ Open Web App</a>
-        <a href="https://github.com/statsim/app/releases" class="cta cta-download">⇣ Download</a>
-
+        <a href="/app" class="cta cta-web">Open web app</a> or
+        <a href="https://github.com/statsim/app/releases" class="cta cta-download">Download</a>
+        </div>
         <div class="social">
           <a href="https://twitter.com/statsimcom" class="icon"><img src="images/twitter.svg"/></a>
           <a href="https://www.facebook.com/statsim" class="icon"><img src="images/facebook.svg"/></a>
           <a href="https://github.com/statsim" class="icon"><img src="images/github.svg"/></a>
         </div>
+        <img class="phone" src="images/phone.png"/>
       </div>
+      <div id="particles-js"></div>
     </header>
-    <div id="particles-js"></div>
+    <section>
+      <div class="wrapper">
+        <h2>Product features</h2>
+        <div class="features">
+          <div class="feature">
+            <img src="images/feature-det.png">
+            <h3>Deterministic Programs</h3>
+            <p>Create and share regular programs just in your browser. From simple calculators to complex environmental models.</p>
+          </div>
+          <div class="feature">
+            <img src="images/feature-prob.png">
+            <h3>Stochastic Modeling</h3>
+            <p>Use 24 probability distributions to build stochastic models. Analyze results with charts and multiple statistics. </p>
+          </div>
+          <div class="feature">
+            <img src="images/feature-bayes.png">
+            <h3>Bayesian Inference</h3>
+            <p>Estimate the posterior distributions of parameters using the Markov Chain Monte Carlo  and Hamiltonian MC algorithms.</p>
+          </div>
+          <div class="feature">
+            <img src="images/feature-nn.png">
+            <h3>Neural Networks</h3>
+            <p>Create and train feed-forward neural networks using the simple and intuitive graphical interface.</p>
+          </div>
+        </div>
+        <div class="examples">
+          <h2>Examples</h2>
+          <ul>
+            <li><a href="https://statsim.com/app/?m=predatorprey">Predator-Prey model</a> (Lotka–Volterra equations) </li>
+            <li><a href="https://statsim.com/app/?m=predatorprey">Linear Regression model</a> (Simple linear regression <i>ax + b</i>) </li>
+          </ul>
+          <a class="more" href="https://github.com/statsim/models">More examples</a>
+        </div>
+      </div>
+    </section>
+    <section style="background: #F2F2F2">
+      <div class="wrapper" style="text-align: center;">
+        <a class="twitter-timeline" data-lang="en" data-width="600" data-height="400" data-dnt="true" data-theme="light" href="https://twitter.com/statsimcom?ref_src=twsrc%5Etfw">Tweets by statsimcom</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="wrapper">
+        <p>© 2018 StatSim. Statistical Simulation and Bayesian Inference in the Browser.</p>
+      </div>
+    </section>
     <script src="particles.min.js"></script>
     <script charset="utf-8">
       particlesJS.load('particles-js', 'particles-config.json', function() {

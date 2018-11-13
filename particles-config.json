@@ -36,7 +36,7 @@
       }
     },
     "size": {
-      "value": 2,
+      "value": 2.5,
       "random": true,
       "anim": {
         "enable": false,
@@ -54,10 +54,10 @@
     },
     "move": {
       "enable": true,
-      "speed": 0.4,
+      "speed": 0.8,
       "direction": "top",
       "random": true,
-      "straight": false,
+      "straight": true,
       "out_mode": "out",
       "bounce": false,
       "attract": {

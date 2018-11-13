@@ -2,8 +2,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: #00020a;
+  font-family: 'Lato', sans-serif;
   /*
   background: -moz-linear-gradient(-45deg, #64002c 0%, #230949 100%);
   background: -webkit-linear-gradient(-45deg, #64002c 0%,#230949 100%);
@@ -11,24 +10,37 @@ html, body {
   */
 }
 
+h2 {
+  font-size: 1.7em;
+  font-weight: 700;
+}
+
+
 .wrapper {
   max-width: 990px;
   position: relative;
   margin: auto;
+  z-index: 1;
 }
 
 header  {
   /*background: #000a2a;*/
   color: white;
-  padding: 40px 20px 60px;
+  padding: 0px 20px;
   position: relative;
   z-index: 2;
+  /* background: #030116; */
+  background: #171520;
+}
+
+header .wrapper {
+  padding: 60px 0px 150px 0px;
 }
 
 header h1 {
-  font-weight: 200;
-  font-size: 2.4em;
-  margin-top: 1.8em;
+  font-weight: 700;
+  font-size: 1.9em;
+  margin-top: 120px;
 }
 
 header p {
@@ -37,14 +49,18 @@ header p {
 }
 
 header a.cta {
-  margin-right: 10px;
+  margin: 10px;
   color: white;
   text-decoration: none;
   font-size: 0.9em;
-  padding: 12px 20px;
+  padding: 18px 35px;
+  font-size: 0.7em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 header a.cta-web {
   background-color: #1b31ab;
+  margin-left: 0;
 }
 header a.cta-web:hover {
   background-color: #2a44d3;
@@ -57,14 +73,22 @@ header a.cta-download:hover {
 }
 
 header img.logo {
-  width: 120px;
+  width: 125px;
+}
+
+header img.phone {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 330px;
 }
 
 header .social {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 60px;
   width: 150px;
+  text-align: right;
 }
 
 header .social .icon {
@@ -83,9 +107,76 @@ header .social .icon img {
 }
 
 #particles-js {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 0;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.feature {
+  width: 18%;
+  padding: 2%;
+  box-shadow: 0 0 30px rgba(0,0,0,.1);
+  border-radius: 5px;
+}
+
+.feature h3 {
+  margin: 10px 0;
+}
+
+.feature p {
+  font-weight: 300;
+  font-size: .8em;
+}
+
+.feature img {
+  width: auto;
+  height: 30px;
+  margin: 10px 0;
+}
+
+.examples {
+  margin-top: 80px;
+}
+
+.examples li {
+  font-weight: 400;
+}
+
+.examples a {
+  color: #2b7bb9;
+  text-decoration: none;
+}
+
+.examples a:hover {
+  color: #3b94d9;
+}
+
+.examples .more {
+  font-size: 0.8em;
+}
+
+.twitter-timeline {
+  box-shadow: 0 0 40px rgba(0,0,0,.1);
+}
+
+.footer p {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #888;
 }
