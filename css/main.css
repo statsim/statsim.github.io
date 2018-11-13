@@ -215,7 +215,11 @@ section {
   width: 65%;
   height: auto;
   box-shadow: 0 0 40px rgba(0,0,0,.15);
-  border-radius: 5px; 
+  border-radius: 10px;
+}
+
+.screenshot p {
+  font-size: 0.9em;
 }
 
 .server {
