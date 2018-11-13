@@ -192,6 +192,8 @@ section {
 .screenshot {
   display: flex;
   margin: 50px 0;
+  align-content: flex-start;
+  align-items: center;
 }
 
 .screenshot .description {
