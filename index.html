@@ -22,13 +22,14 @@
     <header class="site-header">
       <div class="wrapper">
         <div class="header-content">
-        <img class="logo" alt="StatSim" src="images/logo.png"/>
-        <h1>Statistical Simulation and Inference in the Browser</h1>
-        <p><strong>StatSim</strong> is a free probabilistic simulation web app. Multiple simulation methods and over 20 built-in distributions make it possible to create complex models and implement Bayesian inference in the browser. Server-side processing coming soon... </p>
-        <a href="/app" class="cta cta-web">Open web app</a> or
-        <a href="https://github.com/statsim/app/releases" class="cta cta-download">Download</a>
+          <img class="logo" alt="StatSim" src="images/logo.png"/>
+          <h1>Statistical Simulation and Inference in the Browser</h1>
+          <p><strong>StatSim</strong> is a free probabilistic simulation web app. Multiple simulation methods and over 20 built-in distributions make it possible to create complex models and implement Bayesian inference in the browser. Server-side processing coming soon... </p>
+          <a href="/app" class="cta cta-web">Open web app</a> or
+          <a href="https://github.com/statsim/app/releases" class="cta cta-download">Download</a>
         </div>
-        <div class="social">
+        <div class="links">
+          <a href="/docs" class="link">Documentation</a>
           <a href="https://twitter.com/statsimcom" class="icon"><img src="images/twitter.svg"/></a>
           <a href="https://www.facebook.com/statsim" class="icon"><img src="images/facebook.svg"/></a>
           <a href="https://github.com/statsim" class="icon"><img src="images/github.svg"/></a>
@@ -119,7 +120,7 @@
     </section>
     <section class="footer">
       <div class="wrapper">
-        <p>© 2018 StatSim. Statistical Simulation and Bayesian Inference in the Browser.</p>
+        <p>© <span id="year"></span> StatSim. Statistical Simulation and Bayesian Inference in the Browser.</p>
       </div>
     </section>
     <script src="particles.min.js"></script>
@@ -127,6 +128,7 @@
       particlesJS.load('particles-js', 'particles-config.json', function() {
           console.log('callback - particles.js config loaded');
       })
+      document.getElementById('year').innerText = (new Date()).getFullYear()
     </script>
   </body>
 </html>

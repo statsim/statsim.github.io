@@ -88,24 +88,40 @@ header img.phone {
   width: 320px;
 }
 
-header .social {
+header .links {
   position: absolute;
   right: 0;
   top: 60px;
-  width: 150px;
+  width: 350px;
   text-align: right;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
 }
 
-header .social .icon {
-  margin: 5px;
-  opacity: .2;
+header .links a.link {
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 10px 10px 0;
 }
 
-header .social .icon:hover {
-  opacity: .8;
+header .links a {
+  margin: 5px 12px 5px 5px;
+  opacity: .7;
 }
 
-header .social .icon img {
+header .links a:hover {
+  opacity: .5;
+}
+
+header .links .icon img {
   width: 22px;
   filter: invert(100%);
     -webkit-filter: invert(100%);
