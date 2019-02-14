@@ -2878,23 +2878,23 @@ input, select, textarea {
     }
 
       .statistics li.style1 {
-        background-color: #efa8b0;
+        background-color: #71b39c;
       }
 
       .statistics li.style2 {
-        background-color: #c79cc8;
+        background-color: #87c7b6;
       }
 
       .statistics li.style3 {
-        background-color: #a89cc8;
+        background-color: #6fa9b1;
       }
 
       .statistics li.style4 {
-        background-color: #9bb2e1;
+        background-color: #6496b3;
       }
 
       .statistics li.style5 {
-        background-color: #8cc9f0;
+        background-color: #5e7ba7;
       }
 
       .statistics li strong, .statistics li b {
@@ -2921,8 +2921,9 @@ input, select, textarea {
       }
 
         .statistics li .icon:before {
-          font-size: 2.75rem;
+          font-size: 1.95rem;
           line-height: 1.3;
+          opacity: 0.4;
         }
 
     @media screen and (max-width: 980px) {
@@ -3540,10 +3541,10 @@ input, select, textarea {
 
     #main header.major h2:after {
       background-color: #dddddd;
-      background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-      background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-      background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-      background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+      background-image: -moz-linear-gradient(90deg, #6af184, #19cfe5, #0e8dde);
+      background-image: -webkit-linear-gradient(90deg, #6af184, #19cfe5, #0e8dde);
+      background-image: -ms-linear-gradient(90deg, #6af184, #19cfe5, #0e8dde);
+      background-image: linear-gradient(90deg, #6af184, #19cfe5, #0e8dde);
     }
 
     #main table tbody tr {
