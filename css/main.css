@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
   /*
   background: -moz-linear-gradient(-45deg, #64002c 0%, #230949 100%);
   background: -webkit-linear-gradient(-45deg, #64002c 0%,#230949 100%);
@@ -139,6 +140,10 @@ section {
   padding: 50px 20px;
 }
 
+.green {
+  color: #5bc509;
+}
+
 .features {
   display: flex;
   flex-direction: row;
@@ -265,6 +270,59 @@ section {
   text-decoration: none;
 }
 
+.footer {
+  background: #171520;
+  color: white;
+}
+
+.apps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.app {
+  width: 30%;
+  padding-right: 10px;
+  margin: 10px 0 30px 0;
+}
+
+.app h4 {
+  font-size: 16px;
+  margin: 5px 0;
+  font-weight: 400;
+}
+
+.app p {
+  margin: 5px 0;
+}
+
+.app a.title {
+  color: white;
+  text-decoration: none;
+  opacity: .85;
+}
+
+.app a.title:hover {
+  opacity: 1;
+}
+
+.app a.btn {
+  color: #eee;
+  font-size: 12px;
+  text-decoration: none;
+  border: 1px solid #676377;
+  padding: 5px 8px;
+  opacity: .4;
+}
+
+.app a.btn:hover {
+  opacity: 1;
+}
+
 @media only screen and (max-width: 860px) {
   .desktop-only {
     display: none;
@@ -300,11 +358,13 @@ section {
   header .phone {
     display: none;
   }
-  .feature {
+
+  .feature, .app {
     width: 90%;
     padding: 5%;
     margin-bottom: 20px; 
   }
+
   .screenshot {
     display: block;
     border-top: 1px solid #ddd;
