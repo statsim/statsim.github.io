@@ -7,16 +7,7 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <title>StatSim - Statistical Simulations & Bayesian Inference</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7770107-2"></script>
-   <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-     gtag('config', 'UA-7770107-2');
-   </script>
   </head>
   <body>
     <header class="site-header">
@@ -40,7 +31,6 @@
         </div>
         <img class="phone" src="images/phone.png"/>
       </div>
-      <div id="particles-js"></div>
     </header>
     <section>
       <div class="wrapper">
@@ -175,12 +165,5 @@
         </div>
       </div>
     </section>
-    <script src="particles.min.js"></script>
-    <script charset="utf-8">
-      particlesJS.load('particles-js', 'particles-config.json', function() {
-          console.log('callback - particles.js config loaded');
-      })
-      document.getElementById('year').innerText = (new Date()).getFullYear()
-    </script>
   </body>
 </html>
